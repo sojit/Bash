@@ -1,7 +1,7 @@
 #!/bin/bash
 #Author:Soji, 
 #version:1.0
-#The script is for dcrypting the gpg file.Please modify the script based on the specific requirement.
+#The script is for dcrypting the gpg file.Please modify it based on the specific requirement.
 
 if [ $# -ne 1 ] #>/dev/null
    then
