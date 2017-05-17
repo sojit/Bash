@@ -1,8 +1,9 @@
 #!/bin/bash
 #Author:Soji, Version:1.0
 #This script is to make the device login a bit easier.
-#Pre-request, sshpass need to be installed inorder to make it functional.
-#The END
+#Pre-request, sshpass need to be installed inorder to make it functional. Also, the devices can connected by calling the name as mentioned in the case as "server1".
+#The END.
+#Cheers.
 
 #Set the login details for the physical machine
 up=value is required
