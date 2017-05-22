@@ -3,10 +3,7 @@
 #
 ###End
 
-
-
 test="ping x.x.x.x -c 1"
-
 
 if  $test > /dev/null                   # if $test result exit 0 then it will echo its up...
  then
