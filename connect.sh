@@ -21,10 +21,10 @@ if [ "$#" -ne 1 ]
       case "$1"
       in
           #Physical deviceslogin details!!     
-          server1)sshpass -p $pp ssh -p 42002 $up@x.x.x.x -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no;;
+          server1)sshpass -p $pp ssh -p 22 $up@x.x.x.x -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no;;
        
           #virtual devices login details!!
-          vserver1)sshpass -p $pass ssh -p 42002 $user@x.x.x.x -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no;;
+          vserver1)sshpass -p $pass ssh -p 22 $user@x.x.x.x -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no;;
           
           A-Z[0]) echo prefered lowecase device name;;
           **) echo Oops! $1 is not the lab device name;;
