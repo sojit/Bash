@@ -1,7 +1,7 @@
 #!/bin/bash
 #Author=soji
 #version=1.0
-#This script use to make the vpn connections are bit easier.
+#This script use to make the vpn connections are bit easier mainly for "oppenconnect".
 #Please be remember, I have saved the password in the "openpass" file, so that openconnect fetch it from the "--passwd-on-stdin".!
 
 open=openconnect 
