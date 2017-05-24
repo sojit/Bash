@@ -9,7 +9,7 @@ user=NAME
 fre=vpn-link1 
 var=vpn-link2
 
-echo 'Please select the specific vpn
+echo 'echo 'Please select the desired location to connect:
 1.link1
 2.link2'
 
