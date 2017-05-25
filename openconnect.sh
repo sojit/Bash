@@ -16,8 +16,8 @@ echo 'echo 'Please select the desired location to connect:
 read -p "> " choise
 case $choise in
 
-         1) $open --user=$user --passwd-on-stdin<$HOME/Documents/scripts/fair/openpass $fre --juniper;;
-         2) $open --user=$user --passwd-on-stdin<$HOME/Documents/scripts/fair/openpass $var --juniper;;
+         1) $open --user=$user --passwd-on-stdin<$HOME/openpass $fre --juniper;;
+         2) $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniper;;
          *) echo "Please seclect the correct option" ;;
  esac
  
