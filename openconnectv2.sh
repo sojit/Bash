@@ -27,10 +27,12 @@ while true
                $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniper
         elif [ $choise != 1 -o $choise != 2 ]
           then
-             echo "wrong entry"
+             echo "wrong entry!"
              echo
-             echo "Please hit the correct location"
-             echo
+             echo "+++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo 'Please select the desired location to connect:
+1.location1
+2.location2'           
              read -p "> " choise
         else
           break
