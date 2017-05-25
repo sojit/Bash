@@ -25,7 +25,7 @@ while true
         elif [ $choise = 2 ]
            then
                $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniper
-        elif [ $choise != 1 -o $choise != 2 ]
+        elif [ "$choise" != "1" -o "$choise" != "2" ]
           then
              echo "wrong entry!"
              echo
@@ -39,5 +39,5 @@ echo 'Please select the desired location to connect:
    fi
 
 done
-
 #the EnD
+
