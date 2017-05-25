@@ -19,13 +19,13 @@ read -e -p "> " choise
 while true
       do
 
-        if [ $choise -eq 1 ]
+        if [ $choise = 1 ]
            then
                $open --user=$user --passwd-on-stdin<$HOME/openpass $fre --juniper
-        elif [ $choise -eq 2 ]
+        elif [ $choise = 2 ]
            then
                $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniper
-        elif [ $choise -ne 1 -o $choise -ne 2 ]
+        elif [ $choise != 1 -o $choise != 2 ]
           then
              echo "wrong entry"
              echo
