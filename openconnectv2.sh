@@ -2,7 +2,7 @@
 #Author=soji
 #version=1.2
 #This script use to make the vpn connections are bit easier and also this one is the improved version openconnect, still work in progress.
-#Please be remember, I have saved the password in the "openpass" file, so that openconnect fetch it from the "--passwd-on-stdin".!
+#Please be remember, I have saved the password in the "openpass" file, so that the openconnect can fetch it with the "--passwd-on-stdin".!
 #
 
 open=openconnect
@@ -21,15 +21,15 @@ while true
 
         if [ $choise -eq 1 ]
            then
-               $open --user=$user --passwd-on-stdin<$HOME/Documents/scripts/fair/openpass $fre --juniper
+               $open --user=$user --passwd-on-stdin<$HOME/openpass $fre --juniper
         elif [ $choise -eq 2 ]
            then
-               $open --user=$user --passwd-on-stdin<$HOME/Documents/scripts/fair/openpass $var --juniper
+               $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniper
         elif [ $choise -ne 1 -o $choise -ne 2 ]
           then
              echo "wrong entry"
              echo
-             echo "Hit any key to continue"
+             echo "Please hit the correct location"
              echo
              read -p "> " choise
         else
