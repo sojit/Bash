@@ -1,6 +1,6 @@
 #!/bin/bash
 #Author:Soji, version:1.3
-#The script is for dcrypting the gpg file.
+#The script is for dcrypting the gpg file and the improved version of ectractor script.
 #END
 
 if [ $# -ne 1 ] #>/dev/null
