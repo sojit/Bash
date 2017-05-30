@@ -27,7 +27,7 @@ while true
         elif [ "$choise" = "2" ]
            then
                $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniperelif [ $choise = q ]
-        elif [ $choise = q ]
+        elif [ "$choise" = "q" ]
            then
               break         
         elif [ "$choise" != "1" -o "$choise" != "2" ]
