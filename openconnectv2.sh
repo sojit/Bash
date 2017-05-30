@@ -13,6 +13,8 @@ var=URL2
 echo 'Please select the desired location to connect:
 1.location1
 2.location2
+
+q) Quit
 read -e -p "> " choise
 
 
@@ -24,16 +26,21 @@ while true
                $open --user=$user --passwd-on-stdin<$HOME/openpass $fre --juniper
         elif [ "$choise" = "2" ]
            then
-               $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniper
+               $open --user=$user --passwd-on-stdin<$HOME/openpass $var --juniperelif [ $choise = q ]
+        elif [ $choise = q ]
+           then
+              break         
         elif [ "$choise" != "1" -o "$choise" != "2" ]
-          then
+           then
              echo "wrong entry!"
              echo
              echo "+++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo 'Please select the desired location to connect:
 1.location1
 2.location2'           
-             read -p "> " choise
+
+q) Quit
+          read -p "> " choise
         else
           break
    fi
