@@ -15,8 +15,8 @@ echo 'Please select the desired location to connect:
 2.location2
 
 q) Quit
-read -e -p "> " choise
 
+read -e -p "> " choise
 
 while true
       do
@@ -32,9 +32,12 @@ while true
               break         
         elif [ "$choise" != "1" -o "$choise" != "2" ]
            then
-             echo "wrong entry!"
              echo
-             echo "+++++++++++++++++++++++++++++++++++++++++++++++++++"
+             echo "================================="
+             echo "           Wrong Entry           "
+             echo "================================="
+             echo
+
 echo 'Please select the desired location to connect:
 1.location1
 2.location2'           
