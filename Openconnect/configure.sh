@@ -5,15 +5,20 @@
 
 #!/bin/bash
 
-if [ ! -d $HOME/Opencon ]
+if [ ! -d $HOME/opencon ]
  then
-    mkdir -p $HOME/Opencon && touch $HOME/Opencon/pass && touch $HOME/Opencon/user
-      read -p "Please enter the username:" name
-         echo $name > $HOME/Opencon/user
+    mkdir -p $HOME/Opencon 
+      read -p "Please enter the username in capital:" name
+         echo $name > $HOME/opencon/us
       read -p "Please enter the password:" password
-         echo $password > $HOME/Opencon/pass
+         echo $password > $HOME/opencon/pass
  else
-     :
+     echo "File are already exists"
 fi
+cp vconnect /bin/ && chmod a+x /bin/vconnect
+
+echo
+echo "Done!"
+
 
 
