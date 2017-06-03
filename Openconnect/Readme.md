@@ -9,5 +9,5 @@ This is the script to automate the VPN logins, its mainly written for the linux 
  * Please remember to run it as admin user _**#sudo vconnect**_
 
 
-# Thanks
+
 
