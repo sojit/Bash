@@ -1,8 +1,8 @@
 #Openconnect Script
-#This is the script to automate the procera VPN logins, its mainly written for the linux machine with bridge networks.
-#Gives us the flexibility to loging the either location easily.
+##This is the script to automate the procera VPN logins, its mainly written for the linux machine with bridge networks.
+Gives us the flexibility to loging the either location easily.
 
-##Instructions
+#Instructions
  * Make the configure file executable with chmod command.
  * chmod _**#a+x configure**_
  * then run the configure file _**./configure**_
