@@ -3,10 +3,11 @@
 #Gives us the flexibility to loging the either location easily.
 
 ##Instructions
- 1. Make the configure file executable with chmod command.
- 2. chmod #a+x configure
- 3. then run the configure file #./configure
- 4. Once its done you can run the scrit by running vconnect from the terminal and please remember to run it as admin user #sudo vconnect
+ * Make the configure file executable with chmod command.
+ * chmod _**#a+x configure**_
+ * then run the configure file _**./configure**_
+ *  Once its done you can run the scrit by running vconnect from the terminal
+ * Please remember to run it as admin user _**#sudo vconnect**_
 
 
 #Thanks
