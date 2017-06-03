@@ -1,5 +1,5 @@
-#Openconnect Script
-##This is the script to automate the procera VPN logins, its mainly written for the linux machine with bridge networks.
+#Openconnect Script#
+This is the script to automate the procera VPN logins, its mainly written for the linux machine with bridge networks.
 Gives us the flexibility to loging the either location easily.
 
 #Instructions
