@@ -15,7 +15,7 @@ if [ ! -d $HOME/opencon ]
  else
      echo "File are already exists"
 fi
-cp vconnect /bin/ && chmod a+x /bin/vconnect
+cp vconnect usr/bin/ && chmod a+x usr/bin/vconnect
 
 echo
 echo "Done!"
