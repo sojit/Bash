@@ -3,7 +3,6 @@
 #version=1.2
 #This script use to make the vpn connections are bit easier and also this one is the improved version openconnect, still work in progress.
 #Please be remember, I have saved the password in the "openpass" file, so that the openconnect can fetch it with the "--passwd-on-stdin".!
-#
 
 open=openconnect
 user=NAME
@@ -13,14 +12,10 @@ var=URL2
 echo 'Please select the desired location to connect:
 1.location1
 2.location2
-
 q) Quit
-
 read -e -p "> " choise
-
 while true
       do
-
         if [ "$choise" = "1" ]
            then
                $open --user=$user --passwd-on-stdin<$HOME/openpass $fre --juniper
@@ -37,17 +32,13 @@ while true
              echo "           Wrong Entry           "
              echo "================================="
              echo
-
 echo 'Please select the desired location to connect:
 1.location1
 2.location2'           
-
 q) Quit
           read -p "> " choise
         else
           break
    fi
-
 done
 #the EnD
-
