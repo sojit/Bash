@@ -7,7 +7,7 @@
 
 if [ ! -d $HOME/opencon ]
  then
-    mkdir -p $HOME/Opencon 
+    mkdir -p $HOME/opencon 
       read -p "Please enter the username in capital:" name
          echo $name > $HOME/opencon/us
       read -p "Please enter the password:" password
