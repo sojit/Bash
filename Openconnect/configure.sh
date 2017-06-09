@@ -3,41 +3,20 @@
 #Version.1.2
 # This is the installer script.
 
-#!/bin/bash
-
 if [ ! -d $HOME/opencon ]
  then
-    mkdir -p $HOME/opencon
+    mkdir -p $HOME/opencon 
       read -p "Please enter the username in capital:" name
          echo $name > $HOME/opencon/us
-
-      read -s -p "Please enter the password:" pass
-      echo
-      read -s -p "Re-enter the password:" pass1
-
-        while true
-            do
-              if [ "$pass" != "$pass1" ]
-               then
-                 echo
-                 echo "Passwords are not matching!"
-                 echo
-                 read -s -p "Please enter the password:" pass 
-                 echo
-                 read -s -p "Re-enter the password:" pass1 
-               else
-                  break
-              fi
-            done
-            
-        echo $pass1 > $HOME/opencon/pass
-else
+      read -p "Please enter the password:" password
+         echo $password > $HOME/opencon/pass
+ else
      echo "File are already exists"
 fi
+cp vconnect usr/bin/ && chmod a+x usr/bin/vconnect
 
-cp vconnect /bin/ 2>> open.log && chmod a+x usr/bin/vconnect
-
-echo  "Finished"
+echo
+echo "Done!"
 
 
 
