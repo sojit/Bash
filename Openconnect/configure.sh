@@ -30,8 +30,33 @@ if [ ! -d $HOME/opencon ]
               fi
             done
         echo $pass1 > $HOME/opencon/pass
+elif [ -d $HOME/opencon ]
+  then
+     read -p "Please enter the username in capital:" name
+         echo $name > $HOME/opencon/us
+
+      read -s -p "Please enter the password:" pass
+      echo
+      read -s -p "Re-enter the password:" pass1
+
+        while true
+            do
+              if [ "$pass" != "$pass1" ]
+               then
+                 echo
+                 echo "Passwords are not matching!"
+                 echo
+                 read -s -p "Please enter the password:" pass
+                 echo
+                 read -s -p "Re-enter the password:" pass1
+               else
+                  break
+              fi
+            done
+        echo $pass1 > $HOME/opencon/pass        
 else
-     echo "File are already exists"
+      :
+      #echo "File are already exists"
 fi
 cp vconnect /bin/ 2>> openconn.log && chmod a+x usr/bin/vconnect
 
