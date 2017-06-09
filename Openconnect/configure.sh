@@ -60,6 +60,14 @@ else
 fi
 cp vconnect /bin/ 2>> openconn.log && chmod a+x usr/bin/vconnect
 
+if (which openconnect) >/dev/null
+   then
+      :
+   else
+      echo "Installing openconnect..."
+       apt-get install openconnect >> openconn.log
+fi
+
 
 echo
 echo "Completed!"
