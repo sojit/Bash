@@ -12,10 +12,10 @@ if (which openconnect) >/dev/null
        apt-get install openconnect >> openconn.log
 fi
 
-
 if [ ! -d $HOME/opencon ]
  then
-    mkdir -p $HOME/opencon
+    mkdir -p $HOME/opencon 
+
       read -p "Please enter the username in capital:" name
      while true
          do
