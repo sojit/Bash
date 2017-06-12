@@ -1,6 +1,6 @@
 #!/bin/bash
 #Author:Soji
-#Version.1.2
+#Version.1.2.1
 # This is the installer script.
 
 #!/bin/bash
