@@ -96,7 +96,7 @@ else
       :
       #echo "File are already exists"
 fi
-cp vconnect /bin/ 2>> openconn.log && chmod a+x usr/bin/vconnect
+cp vconnect /bin/ 2>> openconn.log && chmod a+x /bin/vconnect
 
 echo
 echo "Completed!"
