@@ -17,7 +17,22 @@ if [ ! -d $HOME/opencon ]
  then
     mkdir -p $HOME/opencon
       read -p "Please enter the username in capital:" name
-         echo $name > $HOME/opencon/us
+     while true
+         do
+           if [[ $name =~ [A-Z][A-Z] ]]
+            then
+               echo $name > $HOME/opencon/us
+               break
+            else
+                echo
+                echo "******************************"
+                echo "*Expected username in capital*"
+                echo "******************************"
+                echo
+                read -p "Please enter the username in capital:" name
+
+           fi
+         done
 
       read -s -p "Please enter the password:" pass
       echo
@@ -41,9 +56,24 @@ if [ ! -d $HOME/opencon ]
 elif [ -d $HOME/opencon ]
   then
      read -p "Please enter the username in capital:" name
-         echo $name > $HOME/opencon/us
+         while true
+         do
+           if [[ $name =~ [A-Z][A-Z] ]]
+            then
+               echo $name > $HOME/opencon/us
+               break
+            else
+                echo
+                echo "******************************"
+                echo "*Expected username in capital*"
+                echo "******************************"
+                echo
+                read -p "Please enter the username in capital:" name
 
-      read -s -p "Please enter the password:" pass
+           fi
+         done
+
+read -s -p "Please enter the password:" pass
       echo
       read -s -p "Re-enter the password:" pass1
 
