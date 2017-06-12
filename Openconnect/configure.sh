@@ -19,7 +19,7 @@ if [ ! -d $HOME/opencon ]
       read -p "Please enter the username in capital:" name
      while true
          do
-           if [[ $name =~ [A-Z][A-Z] ]]
+           if [[ $name =~ ^[A-Z][A-Z]*$           #^[A-Z](\s?[A-Z])*$, 
             then
                echo $name > $HOME/opencon/us
                break
@@ -58,7 +58,7 @@ elif [ -d $HOME/opencon ]
      read -p "Please enter the username in capital:" name
          while true
          do
-           if [[ $name =~ [A-Z][A-Z] ]]
+           if [[ $name =~ ^[A-Z][A-Z]*$
             then
                echo $name > $HOME/opencon/us
                break
