@@ -5,9 +5,9 @@
 #Please be remember, I have saved the password in the "openpass" file, so that the openconnect can fetch it with the "--passwd-on-stdin".!
 
 open=openconnect
-user=NAME
-fre=URL1
-var=URL2
+user=`$HOME/opencon/us`
+location1=office1.vpnnetwork1.com
+location2=office1.vpnnetwork2.com
 
 echo 'Please select the desired location to connect:
 1.location1
@@ -41,4 +41,4 @@ q) Quit
           break
    fi
 done
-#the EnD
+
