@@ -1,5 +1,5 @@
 # Openconnect Script
-This is the script to automate the VPN logins, its mainly written for the linux openconnect. Its gives us the flexibility to logging multiple locations.
+This is the script to automate the VPN logins, its written for the linux openconnect. It gives us the flexibility to logging multiple site VPN's.
 
 ## Instructions
  * Make the configure file executable with chmod command _**#chmod a+x configure**_.
