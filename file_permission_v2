@@ -16,7 +16,7 @@ if  [ $total_string = "10" ]
    then
       echo "Please be patience"
    else
-      echo "Please re-run the script and enter the corrent value!"
+      echo "Please re-run the script and enter the correct value!"
       exit
 fi
 
