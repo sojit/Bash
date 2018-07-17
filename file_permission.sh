@@ -1,4 +1,3 @@
-ptac-01 ~ # cat new.sh 
 #!/bin/bash
 
 read -p "Please enter the file permission:-" file_details
