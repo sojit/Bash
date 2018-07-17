@@ -1,4 +1,6 @@
 #!/bin/bash
+#Auther=soji, Version:1.1
+#The script is intended to convert the file permission;
 
 echo  "######################################################################################"
 echo  "#This script is to to convert file permission to its respective numric value         #"
