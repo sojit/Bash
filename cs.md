@@ -46,8 +46,6 @@ git commit || echo "Commit failed"
 ```
 
 ### Functions
-{: id='functions-example'}
-
 ```bash
 get_name() {
   echo "John"
@@ -56,10 +54,9 @@ get_name() {
 echo "You are $(get_name)"
 ```
 
-See: [Functions](#functions)
+
 
 ### Conditionals
-{: id='conditionals-example'}
 
 ```bash
 if [[ -z "$string" ]]; then
@@ -69,19 +66,12 @@ elif [[ -n "$string" ]]; then
 fi
 ```
 
-See: [Conditionals](#conditionals)
-
 ### Strict mode
-
 ```bash
 set -euo pipefail
 IFS=$'\n\t'
 ```
-
-See: [Unofficial bash strict mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
-
 ### Brace expansion
-
 ```bash
 echo {A,B}.js
 ```
@@ -90,13 +80,8 @@ echo {A,B}.js
 | `{A,B}.js` | Same as `A.js B.js` |
 | `{1..5}` | Same as `1 2 3 4 5` |
 
-See: [Brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
-
-
 Parameter expansions
 --------------------
-{: .-three-column}
-
 ### Basics
 
 ```bash
@@ -115,9 +100,6 @@ echo ${food:-Cake}  #=> $food or "Cake"
 length=2
 echo ${name:0:length}  #=> "Jo"
 ```
-
-See: [Parameter expansion](http://wiki.bash-hackers.org/syntax/pe)
-
 ```bash
 STR="/path/to/foo.cpp"
 echo ${STR%.cpp}    # /path/to/foo
@@ -194,8 +176,6 @@ The `:` is optional (eg, `${FOO=word}` works)
 
 Loops
 -----
-{: .-three-column}
-
 ### Basic for loop
 
 ```bash
@@ -296,8 +276,6 @@ fi
 | `$*`       | All arguments                      |
 | `$@`       | All arguments, starting from first |
 | `$1`       | First argument                     |
-
-See [Special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).
 
 Conditionals
 ------------
